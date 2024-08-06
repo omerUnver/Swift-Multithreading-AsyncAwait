@@ -12,7 +12,7 @@ class AsyncListViewModel : ObservableObject {
     var asyncAwaitUrlSession = AsyncAwaitUrlSession()
 }
 
-//Async-Await ile Yapıldığında
+// AsyncAwait
 
 extension AsyncListViewModel{
     func fetchData() async {
@@ -29,7 +29,7 @@ extension AsyncListViewModel{
     }
 }
 
-//Completion Bloğu ile yapıldığında;
+//Completion
 
 extension AsyncListViewModel {
 //    @Published var userData = [TestAsyncViewModel]()

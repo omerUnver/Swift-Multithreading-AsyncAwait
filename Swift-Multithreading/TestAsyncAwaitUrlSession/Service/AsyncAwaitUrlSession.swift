@@ -10,7 +10,7 @@ class AsyncAwaitUrlSession : ObservableObject {
     
     let url = URL(string: "https://jsonplaceholder.typicode.com/posts")
 }
-//Async-Await ile yapıldığında
+//Async-Await
 extension AsyncAwaitUrlSession  {
     func testFetch() async throws -> [UrlSessionModel]{
         guard let url = url else {
@@ -32,7 +32,7 @@ extension AsyncAwaitUrlSession  {
     }
 }
 
-//Completion ile yapıldığında
+//Completion
 extension AsyncAwaitUrlSession {
 //    func getAsyncData(completion : @escaping (Result<[UrlSessionModel], ErrorUrl>) -> Void) {
 //        guard let url = url else {return completion(.failure(.yanlisURL))}
